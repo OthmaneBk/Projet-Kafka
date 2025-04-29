@@ -6,7 +6,7 @@
   - Gérer la configuration des topics (métadonnées)
   - Superviser les échecs (si un broker tombe en panne)
   
-## 2- Kafka : Apache Kafka est une plate-forme de streaming d'événements distribuée open source utilisée par des milliers d'entreprises pour les pipelines de données hautes performances, l'analyse en continu, l'intégration de données et les applications critiques.
+## 2- Apache Kafka : C'est une plateforme distribuée de diffusion de données en continu, capable de publier, stocker, traiter et souscrire à des flux d'enregistrement en temps réel
 - *Imagine que tu as* :
 - Des capteurs, applications, ou services qui envoient des données → on les appelle des Producteurs (Producers)
 - Des applications qui consomment ces données → appelées Consommateurs (Consumers)
