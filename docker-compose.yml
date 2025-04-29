@@ -20,6 +20,6 @@ services:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092
-      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
-      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1  # Cela signifie que si le broker tombe en panne, aucun autre broker ne pourra enregistrer l'arrêt du consumer (ceci n'est pas notre cas, nous devons juste assurer la partie de test et de développement d'Apache Kafka).
+      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1  # Cela signifie que l’écri
+      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1 # Les logs d'état des transactions dans Apache Kafka se réfèrent aux journaux utilisés pour enregistrer les informations sur l'état des transactions(si la transaction est echouée les messages ne seront pas visible pour le consumer et sinon il seront visible pour lui).
