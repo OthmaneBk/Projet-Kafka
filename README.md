@@ -1,7 +1,7 @@
 ![ZoooKafka](https://github.com/user-attachments/assets/7be9cae1-3096-4fcc-b973-c21813c7f860)
 
 # ZooKeeper et Kafka c'est quoi?
-## 1- ZooKeeper : C'est le maître ou coordinateur du cluster Kafka(Contenant des brokers)
+## 1- ZooKeeper  (Watcher) : C'est le maître ou coordinateur du cluster Kafka(Contenant des brokers)
   - Gérer les brokers Kafka (leur enregistrement et leur état)
   - Gérer la configuration des topics (métadonnées)
   - Superviser les échecs (si un broker tombe en panne)
